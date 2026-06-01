@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calico Critters Mini Dress Up Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Knewave&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=VT323&display=swap" rel="stylesheet">
+ <h1> Calico Creator </h1>
+ <h2>Dress Up Game</h2>
+ <h3 id="name">Angelina Duong</h3>
+
+<body>
+  <div class="background">
+ 
+    <!-- Character Area: clothes, base, accessories - overall layers -->
+    <div class="character-zone">
+       <img id="baseLayer" src="">
+    <div class="clothing-layer">
+        <img id="outfitLayer" src="">
+        <img id="accessoryLayer" src="">
+        <img id="accessoryLayer2" src="">
+ 
+ 
+      </div>
+    </div>
+ <div class="options-zoneright">
+ 
+  <!--Buttons on the right-->
+  
+  <div class="button-wrapper rs">
+    <span class="button-label"><img class="AccessoryIcon" src="images/AccessoryIcon1.png"></span>
+  <button onclick="nextAccessory()"><img class="Arrow" src="images/Game Arrow.png"></button>
+</div>
+<div class="button-wrapper rs">
+     <span class="button-label"><img class="AccessoryIcon" src="images/AccessoryIcon2.png"></span>
+  <button onclick="nextAccessory2()"><img class="Arrow" src="images/Game Arrow.png"></button>
+  </div>
+ <div class="button-wrapper rs">
+     <span class="button-label"><img class="OutfitChangeIcon" src="images/HangerIcon.png"></span>
+  <button onclick="nextOutfit()"><img class="Arrow" src="images/Game Arrow.png"></button>
+</div>
+ <div class="button-wrapper rs">
+     <span class="button-label"><img class="BASECHAR" src="images/calico base.png"></span>
+  <button onclick="nextBase()"><img class="Arrow" src="images/Game Arrow.png"></button>
+</div>
+</div>
+ 
+    <!-- Buttons on the left -->
+    <div class="options-zoneleft">
+
+<div class="button-wrapper ls">
+    <span class="button-label"><img class="AccessoryIcon" src="images/AccessoryIcon1.png"></span>
+  <button onclick="prevAccessory()"><img class="Arrow2" src="images/Game Arrow.png"></button>
+  </div>
+  <div class="button-wrapper ls">
+    <span class="button-label"><img class="AccessoryIcon" src="images/AccessoryIcon2.png"></span>
+  <button onclick="prevAccessory2()"><img class="Arrow2" src="images/Game Arrow.png"></button>
+  </div>
+      <div class="button-wrapper ls">
+        <span class="button-label"><img class="OutfitChangeIcon" src="images/HangerIcon.png"></span>
+  <button onclick="prevOutfit()"><img class="Arrow2" src="images/Game Arrow.png"></button>
+  </div>
+  <div class="button-wrapper ls">
+    <span class="button-label"><img class="BASECHAR" src="images/calico base.png"></span>
+  <button onclick="prevBase()"><img class="Arrow2" src="images/Game Arrow.png"></button>
+</div>
+
+</div>
+ 
+  </div>
+ 
+  <script src="index.js"></script>
+
+  <div class="button-container">
+<a href="Intro Page.html" class="intro-pagebtn">  
+    <span class="btn-text">Back</span>
+    <span class="arrow"><img src="images/arrow.png"></span>
+</a>
+</div>
+
+<!--duckkks-->
+
+<div class="duck duck1" onclick="collectDuck(this)">
+  <img src="images/duckduck.png">
+</div>
+<div class="duck duck2" onclick="collectDuck(this)">
+  <img src="images/duckduck.png">
+</div>
+<div class="duck duck3" onclick="collectDuck(this)">
+  <img src="images/duckduck.png">
+</div>
+<div class="duck duck4" onclick="collectDuck(this)">
+  <img src="images/duckduck.png">
+</div>
+<div class="duck duck5" onclick="collectDuck(this)">
+  <img src="images/duckduck.png">
+</div>
+<div class="duck duck6" onclick="collectDuck(this)">
+  <img src="images/duckduck.png">
+</div>
+<div class="duck duck7" onclick="collectDuck(this)">
+  <img src="images/duckduck.png">
+</div>
+<div class="duck duck8" onclick="collectDuck(this)">
+  <img src="images/duckduck.png">
+</div>
+<div class="duck duck9" onclick="collectDuck(this)">
+  <img src="images/duckduck.png">
+</div>
+<div class="duck duck10" onclick="collectDuck(this)">
+  <img src="images/duckduck.png">
+</div>
+
+<h3 id="score">Ducks found: 0</h3>
+
+<button onclick="toggleDucks()" class="duck-btn">
+ <img class="duckbut" src="images/duckduck.png">
+</button>
+
+<audio controls id="bgMusic" loop>
+  <source src="sounds/calico-critter-playlist.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calico Critters Mini Dress Up Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        -- Character Area --
+        <div class="character-zone">
+            <div class="char-base"><img id="base" src="images/base bunny.png"></div>
+            <div id="clothing-layer" class="clothing-layer"></div>
+        </div>
+
+        -- Options Area --
+        <div class="options-zoneright">
+            <button onclick="changeClothes('Accessories')">Accessories</button>
+            <button onclick="changeClothes('Outfits')">Outfits</button>
+            <button onclick="changeClothes('Base')">Base</button>
+        </div>
+        <div class="options-zoneleft">
+            <button onclick="changeClothes('Accessories2')"></button>
+            <button onclick="changeClothes('Outfits2')"></button>
+            <button onclick="changeClothes('Base2')"></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+-->

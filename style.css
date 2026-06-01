@@ -1,0 +1,495 @@
+body{
+  background-color: blanchedalmond;
+}
+
+h1{
+  text-align: center;
+  font-size: 100px;
+    font-family: "Cherry Bomb One", system-ui;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 2px;
+  text-decoration: underline;
+  color: rgb(255, 192, 192);
+  -webkit-text-stroke: 5px;
+  -webkit-text-stroke-color: #a88c6d;
+}
+
+h2{
+  text-align: center;
+  font-size: 40px;
+  font-family: "Knewave", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 2px;
+  color: #6F3400;
+}
+
+#name{
+  font-size: 30px;
+  position: fixed;
+  font-family: "Cherry Bomb One", system-ui;
+  font-weight: 400;
+  font-style: bold;
+  bottom: 70px;
+  right: 20px;
+  color: #FFADB4;
+    -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: #a88c6d;
+}
+
+.character-zone {
+  width: 600px;
+  height: 800px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+
+  background-image: url("images/BACKGROUND GENIUS HOUR.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border: 5px solid #a88c6d;
+  box-shadow:
+    inset 0 0 0 3px #f8eee1,
+    inset 0 0 0 7px #dbc2a3,
+    inset 0 0 12px rgba(0, 0, 0, 0.08),
+    0 10px 25px rgba(0, 0, 0, 0.25);
+
+}
+
+
+
+.clothing-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+ 
+
+ 
+.clothing-layer img {
+  width: 300px;
+  height: auto;
+}
+ 
+ 
+.options-zoneright {
+  width: 200px;
+  background: none;
+  border-radius: 15px;
+  padding: 15px;
+  transform: translate(450px, 300px);
+  position: absolute;
+}
+ 
+.options-zoneleft {
+  width: 200px;
+  background: none;
+  border-radius: 15px;
+  padding: 15px;
+  transform: translate(-450px, 300px);
+  position: absolute;
+}
+ 
+.background {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+ 
+.clothing-layer img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+ 
+.outfit {
+  width: 70%;
+  top: 300px;
+  height: max-content;
+}
+ 
+.accessory {
+  width: 30%;
+  top: 90px;
+  z-index: 20;
+}
+ 
+ 
+#outfitLayer {
+width: 100%;
+  height: 100%;
+  object-fit: contain;
+  top: 0px;
+}
+ 
+#accessoryLayer {
+width: 100%;
+  height: 100%;
+  object-fit: contain;
+  top: 0px;
+}
+
+#accessoryLayer2 {
+width: 100%;
+  height: 100%;
+  object-fit: contain;
+  top: 0px;
+}
+ 
+#baseLayer {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* button(arrows) placement, size, animation */
+ 
+.Arrow {
+  margin-top: 5px;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+ 
+.Arrow2 {
+  margin-top: 5px;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transform: rotate(180deg);
+}
+ 
+button{
+      background-color: transparent; 
+    border: none;            
+    cursor: pointer;         
+    padding: 0;  
+}
+
+.Arrow {
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.25s ease;
+}
+ 
+.Arrow:hover {
+
+  transform: scale(1.1) rotate(-1deg);
+}
+ 
+.Arrow:active {
+  transform: scale(0.95);
+
+}
+
+.Arrow2 {
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.25s ease;
+}
+ 
+.Arrow2:hover {
+
+  transform: scale(1.1) rotate(181deg);
+}
+ 
+.Arrow2:active {
+  transform: scale(0.95) rotate(181deg);
+
+}
+
+#cod{
+  font-size: 50px;
+  position: fixed;
+  bottom: 150px;
+  left: 20px;
+}
+
+#actcod{
+  font-size: 50px;
+  position: fixed;
+  bottom: 100px;
+  left: 20px;
+}
+
+#actcod2{
+  font-size: 50px;
+  position: fixed;
+  bottom: 50px;
+  left: 20px;
+}
+
+#actcod3{
+  font-size: 50px;
+  position: fixed;
+  bottom: 0px;
+  left: 20px;
+}
+
+.button-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 20px;
+}
+.rs {
+    flex-direction: row;
+}
+
+.ls {
+    flex-direction: row-reverse;
+}
+.options-zoneright,
+.options-zoneleft {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.button-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 70px;
+}
+.button-label {
+    min-width: 120px;
+}
+.AccessoryIcon {
+  margin-top: 5px;
+  width: 150px;
+  height: 130px;
+
+}
+.BASECHAR {
+  margin-top: 5px;
+  width: 150px;
+  height: 150px;
+
+}
+.OutfitChangeIcon {
+  margin-top: 5px;
+  width: 120px;
+  height: 120px;
+  margin-left: 15px;
+}
+
+/**/
+
+.arrow img{
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+
+  opacity: 0;
+  transform: translateX(10px);
+
+  transition: 0.6s;
+}
+
+.intro-pagebtn:hover .arrow img
+{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+}
+
+.intro-pagebtn
+{
+  position: relative;
+
+  display: inline-block;
+
+  font-size: 30px;
+  font-family: "Cherry Bomb One", system-ui;
+  font-weight: 200;
+  font-style: italic;
+
+  color: rgb(255, 192, 192);
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #a88c6d;
+
+  text-decoration: none;
+
+  text-align: center;
+}
+.btn-text{
+  display: block;
+  text-align: center;
+}
+.arrow{
+      margin-top: 10px;
+  position: absolute;
+right: -70px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.intro-pagebtn:hover
+ {
+
+  transform: scale(1.1) rotate(-1deg);
+}
+ 
+.intro-pagebtn:active{
+  transform: scale(0.95);
+
+}
+.intro-pagebtn{
+  transition: transform 0.2s ease;
+}
+
+/*ducks*/
+
+.duck img{
+  width: 20px;
+  height: 20px;
+}
+
+.duck{
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.duck1{
+  top: 140px;
+  left: 60px;
+}
+
+.duck2{
+  top: 220px;
+  right: 120px;
+}
+
+.duck3{
+  bottom: 180px;
+  left: 280px;
+}
+
+.duck4{
+  top: 500px;
+  left: 40px;
+}
+
+.duck5{
+  top: 50px;
+  right: 20px;
+}
+
+.duck6{
+  bottom: 120px;
+  right: 300px;
+}
+
+.duck7{
+  top: 30px;
+  left: 400px;
+}
+
+.duck8{
+  top: 600px;
+  right: 50px;
+}
+
+.duck9{
+  bottom: 50px;
+  left: 600px;
+}
+
+.duck10{
+  top: 350px;
+  left: 75%;
+}
+
+.show-ducks .duck{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.duck{
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.duck{
+  transition: all 0.3s ease;
+}
+
+.duck:active{
+  transform: scale(0.8);
+}
+
+#score{
+  position: fixed;
+  top: 23px;
+  right: 20px;
+
+  font-size: 50px;
+  font-family: "Cherry Bomb One", system-ui;
+  font-weight: 400;
+  font-style: bold;
+
+  color: #FFADB4;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: #a88c6d;
+
+  opacity: 0;
+  transform: translateY(-10px);
+
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.duckbut {
+ width: 20px;
+  height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.25s ease;
+}
+ 
+.duckbut:hover {
+
+  transform: scale(1.1) rotate(-1deg);
+}
+ 
+.duckbut:active {
+  transform: scale(0.95);
+
+}
+
+
+#bgMusic{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  font-size: 20px;
+  padding: 10px 15px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #FFADB4;
+  color: white;
+
+  cursor: pointer;
+}
